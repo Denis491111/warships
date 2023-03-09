@@ -1,0 +1,38 @@
+{
+  "name": "world-of-warships",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "1.2.1",
+    "click-outside-vue3": "4.0.1",
+    "core-js": "3.26.1",
+    "datef": "3.0.0",
+    "vue": "3.2.45",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "4.1.6",
+    "vuex": "4.1.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.43.0",
+    "@typescript-eslint/parser": "5.43.0",
+    "@vue/cli-plugin-babel": "5.0.8",
+    "@vue/cli-plugin-eslint": "5.0.8",
+    "@vue/cli-plugin-router": "5.0.8",
+    "@vue/cli-plugin-typescript": "5.0.8",
+    "@vue/cli-plugin-vuex": "5.0.8",
+    "@vue/cli-service": "5.0.8",
+    "@vue/eslint-config-typescript": "9.1.0",
+    "eslint": "7.32.0",
+    "eslint-plugin-vue": "8.7.1",
+    "lint-staged": "11.2.6",
+    "typescript": "4.5.5"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  }
+}

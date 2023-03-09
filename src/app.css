@@ -1,0 +1,96 @@
+@import "assets/css/normalize.css";
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("~@/assets/fonts/RobotoCondensed-Regular.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("~@/assets/fonts/RobotoCondensed-Bold.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root {
+    --text-secondary: #676B77;
+    --text-accent: #E72430;
+
+    --border-soft: #D6D8DC;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    color: #1F1F1F;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f2f3f5;
+    background-image: url("~@/assets/img/bg.jpeg");
+    overscroll-behavior: none;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 50px 16px;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::selection {
+    background: #fc611d;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background: #fc611d;
+    color: #ffffff;
+}
+
+.fade-leave-active, .fade-100ms-leave-active {
+    transition: opacity .3s linear;
+    opacity: 1;
+}
+
+.fade-100ms-leave-active {
+    transition-duration: .1s;
+}
+
+.fade-enter, .fade-leave-to, .fade-100ms-enter, .fade-100ms-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active, .fade-100ms-enter-active {
+    transition: opacity .2s linear;
+    opacity: 0;
+}
+
+.fade-100ms-enter-active {
+    transition-duration: .1s;
+}
+
+.fade-enter-to, .fade-leave, .fade-100ms-enter-to, .fade-100ms-leave {
+    opacity: 1;
+}
+
+.popup-opened {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 500px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    body {
+        background: rgba(24, 45, 68);
+        padding: 20px 0 0 0;
+    }
+}
